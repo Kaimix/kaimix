@@ -1,0 +1,14 @@
+
+header{
+    nav{
+        ul{
+            display: flex;
+            list-style: none;
+            li{
+                a{
+                  color: $verde;
+                }
+            }
+        }
+    }
+}
