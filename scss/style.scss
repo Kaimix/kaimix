@@ -1,0 +1,23 @@
+// Variables
+@import  '../scss/var/colores.scss';
+// Fuentes google 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+/* Fuente para titulos : Bebas Neue --> font-family: 'Bebas Neue', cursive;
+    Fuente para textos : Montserrat --> font-family: 'Montserrat', sans-serif;
+*/
+
+// 
+
+
+// Componentes
+/*@import 'components/nav.scss';*/
+@import '../scss/components/filosofia.scss';
+@import '../scss/components/servicios.scss';
+@import '../scss/components/tarjetas.scss';
+@import '../scss/components/tarjetas-t.scss';
+@import '../scss/components/general.scss';
+@import '../scss/components/fuentes.scss';
+@import '../scss/components/imagen-main.scss';
+

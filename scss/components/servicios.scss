@@ -1,0 +1,33 @@
+#servicios{#titulo-servicios{h3{color: $blanco;}}}
+
+.descripcion{margin: 3.4rem;
+width: 28rem;}
+
+#subtitulos{ 
+    margin-left: 0;
+    .subtitulo{
+                     font-family: $fuenteTexto;
+                     font-weight: 600;
+                     color: $verde;
+                     margin-left: 0;
+                   }
+    
+}
+
+//Contenedor Grid
+
+.servicios{
+    display: flex;
+    flex: 35% 35%;
+    gap: 30%;
+    align-items: center;
+}
+
+//Grid de iconos
+
+.grid-iconos{
+    display: grid;
+    grid-template-columns: 4rem 4rem 4rem;
+    grid-template-rows: 4rem 4rem;
+    gap: 2rem;
+}

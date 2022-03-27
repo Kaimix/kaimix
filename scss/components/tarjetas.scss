@@ -1,0 +1,39 @@
+//FlexBox
+#tarjetas{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+//Estilo de texto
+#tarjetas{.tarjeta{h4{
+                                color: $verde;
+                                margin: .75rem;
+                                font-family:$fuenteTitulo;
+                                font-weight: 400;
+                                font-size: 1.25rem;
+                            }}}
+#tarjetas{.tarjeta{p{margin: .75rem;
+    font-size: .85rem;
+    font-weight: 600;
+    line-height: 1.06rem;
+}}}
+
+//Estilo de tarjetas
+
+.tarjeta{
+    width: 15.2rem;
+    height: 16.4rem;
+    border-radius: 1rem;
+    border-bottom: $verde 1.2rem solid;
+    background-color: $grisOscuro;
+}
+
+.icono-tarjeta{
+    background-color: $verdeOscuro;
+    border-radius: 3rem;
+    padding: .2rem;
+    margin: .75rem;
+    size: 4rem;
+}

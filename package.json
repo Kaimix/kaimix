@@ -1,0 +1,23 @@
+{
+  "name": "kaimix",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kaimix/kaimix.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kaimix/kaimix/issues"
+  },
+  "homepage": "https://github.com/Kaimix/kaimix#readme",
+  "dependencies": {
+    "sass": "^1.49.9"
+  },
+  "devDependencies": {},
+  "description": ""
+}
