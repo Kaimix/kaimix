@@ -1,0 +1,29 @@
+@import '../var/colores.scss';
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $negro;
+    color: $blanco;
+    font-family: $fuenteTexto;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    p {
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 1.4rem;
+    }
+    .footer-img {
+        img {
+            width: 70px;
+        }
+    }
+    @media (min-width: 640px) { 
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
