@@ -1,18 +1,136 @@
-/* Error: Undefined variable.
- *   ,
- * 9 |                   color: $verde;
- *   |                          ^^^^^^
- *   '
- *   scss/components/nav.scss 9:26  @import
- *   scss/style.scss 13:9           root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 9 \2502                    color: $verde;\a   \2502                           ^^^^^^\a   \2575 \a   scss/components/nav.scss 9:26  @import\a   scss/style.scss 13:9           root stylesheet";
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+/* Fuente para titulos : Bebas Neue --> font-family: 'Bebas Neue', cursive;
+    Fuente para textos : Montserrat --> font-family: 'Montserrat', sans-serif;
+*/
+body {
+  background-color: #000000;
 }
+
+.contacto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  color: #E5E5E5;
+}
+.contacto .contacto__iconos img {
+  background-color: #01FFBB;
+  border-radius: 50%;
+  width: 44px;
+  padding: 0.5rem;
+}
+.contacto .contacto__iconos--active p {
+  padding: 0.5rem;
+}
+.contacto .contacto__iconos--active {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form .form__field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.4rem;
+  width: 100%;
+}
+.form .form__field input {
+  font-family: "Bebas Neue", cursive;
+  line-height: 31px;
+  background-color: #000000;
+  border: 0;
+  outline: none;
+  color: #E5E5E5;
+  border-bottom: 5px solid #01FFBB;
+  width: 100%;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+.form .form__field input::placeholder {
+  font-weight: bold;
+  color: #E5E5E5;
+  font-size: 1.5rem;
+}
+.form .form__field textarea::placeholder {
+  font-weight: bold;
+  color: #E5E5E5;
+  font-size: 1.5rem;
+  outline: none;
+}
+.form .form__field textarea {
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.5rem;
+  background-color: #000000;
+  color: #E5E5E5;
+  border: 5px solid #01FFBB;
+  padding: 0.5rem;
+  outline: none;
+}
+.form .form__field .boton {
+  font-size: 1rem;
+  color: #E5E5E5;
+  padding: 1rem;
+  background-color: #000000;
+  border: 4px solid #01FFBB;
+  cursor: pointer;
+}
+@media (max-width: 640px) {
+  .form .form__field input, .form .form__field textarea {
+    width: 300px;
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  color: #E5E5E5;
+  font-family: "Montserrat", sans-serif;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.footer p {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1.4rem;
+}
+.footer .footer-img img {
+  width: 70px;
+}
+@media (min-width: 640px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+html {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.marcas {
+  color: #E5E5E5;
+}
+.marcas .marcas-icons {
+  width: 100%;
+  background-color: #585454;
+}
+.marcas .marcas-icons img {
+  width: 100px;
+}
+
+/*# sourceMappingURL=style.css.map */

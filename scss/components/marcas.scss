@@ -1,0 +1,19 @@
+@import '../var/colores.scss';
+html {
+    box-sizing: border-box;
+    margin: 0;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+.marcas{
+    color: $blanco;
+    .marcas-icons {
+        width: 100%;
+        
+        background-color: rgb(88, 84, 84);
+    }
+    .marcas-icons img {
+        width: 100px;
+    }
+}
