@@ -7,11 +7,22 @@ body {
   background-color: #000000;
 }
 
+.contacto__header {
+  font-family: "Bebas Neue", cursive;
+}
+.contacto__header h3 {
+  color: #E5E5E5;
+  font-size: 3rem;
+}
+.contacto__header p {
+  color: #E5E5E5;
+  font-size: 2.5rem;
+}
+
 .contacto {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center;
   width: 100%;
   color: #E5E5E5;
 }
@@ -22,6 +33,8 @@ body {
   padding: 0.5rem;
 }
 .contacto .contacto__iconos--active p {
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.2rem;
   padding: 0.5rem;
 }
 .contacto .contacto__iconos--active {
@@ -29,6 +42,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  gap: 1.5rem;
 }
 
 .form .form__field {
@@ -36,8 +50,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1.4rem;
   width: 100%;
+  gap: 1.5rem;
 }
 .form .form__field input {
   font-family: "Bebas Neue", cursive;
@@ -79,7 +93,7 @@ body {
   border: 4px solid #01FFBB;
   cursor: pointer;
 }
-@media (max-width: 640px) {
+@media (max-width: 480px) {
   .form .form__field input, .form .form__field textarea {
     width: 300px;
   }
@@ -87,30 +101,21 @@ body {
 
 .footer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   background-color: #000000;
   color: #E5E5E5;
   font-family: "Montserrat", sans-serif;
-  position: absolute;
-  bottom: 0;
   width: 100%;
+  padding: 1rem;
 }
 .footer p {
   font-size: 1rem;
   font-weight: bold;
-  padding: 1.4rem;
 }
 .footer .footer-img img {
   width: 70px;
-}
-@media (min-width: 640px) {
-  .footer {
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-  }
 }
 
 html {
