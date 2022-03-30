@@ -85,12 +85,16 @@ body {
             font-size: 1rem;
             color: $blanco;
             padding: 1rem;
+            font-weight: bold;
             background-color: $negro;
             border: 4px solid $verde;
             cursor: pointer;
+            transition: .5s;
         }
         .boton:hover {
-            
+            background-color: $verde;
+            color: $negro;
+            transition-delay: 0s;
         }
         @media ( max-width: 480px) { 
             input,textarea {

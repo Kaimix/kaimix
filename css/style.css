@@ -89,9 +89,16 @@ body {
   font-size: 1rem;
   color: #E5E5E5;
   padding: 1rem;
+  font-weight: bold;
   background-color: #000000;
   border: 4px solid #01FFBB;
   cursor: pointer;
+  transition: 0.5s;
+}
+.form .form__field .boton:hover {
+  background-color: #01FFBB;
+  color: #000000;
+  transition-delay: 0s;
 }
 @media (max-width: 480px) {
   .form .form__field input, .form .form__field textarea {
