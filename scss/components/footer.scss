@@ -4,11 +4,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: $negro;
+    background-color: $gris;
     color: $blanco;
     font-family: $fuenteTexto;
     width: 100%;
-    padding: 1rem;
+    margin-top: 4rem;
+    .footer-icons a {
+        text-decoration: none;
+    }
     p {
         font-size: 1rem;
         font-weight: bold;
