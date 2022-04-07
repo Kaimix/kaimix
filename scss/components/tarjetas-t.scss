@@ -1,17 +1,18 @@
 #confianza>p,
 #confianza h2 {
     text-align: center;
+    align-self: center;
 }
 
 #confianza-1,
 #confianza-2 {
     display: grid;
-    grid-template-columns: 18rem 18rem 18rem;
-    gap: 1rem 8rem;
+    grid-template-columns: 22% 22% 22%;
+    gap: 17%;
 }
 
 #confianza-2 {
-    grid-template-rows: 15rem 15rem;
+    grid-template-rows: 10% 10%;
 }
 
 .tarjeta-t {
@@ -41,7 +42,6 @@
 }
 
 
-
 //Responsive
 
 @media(max-width:500px) {
@@ -52,7 +52,20 @@
         #confianza-1,
         #confianza-2 {
             display: block;
-            margin-left: 0;
+        }
+    }
+
+}
+
+@media(max-width:1024px) {
+
+    #confianza {
+        align-items: center;
+
+        #confianza-1,
+        #confianza-2 {
+            display: block;
+
         }
     }
 
