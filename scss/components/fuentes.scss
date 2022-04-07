@@ -1,12 +1,23 @@
 //Fuentes
 
 /*Colores generales*/
-p, h2{
+h2,
+.subtitulo {
+    text-shadow: 0 0 2rem $verdeOscuro;
+}
+
+p {
+    text-shadow: 0 0 .25rem $grisOscuro
+}
+
+
+p,
+h2 {
     color: white;
     font-family: $fuenteTexto;
 }
 
-h2{
+h2 {
     font-family: $fuenteTitulo;
     font-size: 2.3rem;
     font-weight: 400;
@@ -16,10 +27,29 @@ h2{
 
 
 
-h3{
+h3 {
+    color: $verde;
     font-family: $fuenteTitulo;
     font-size: 18px;
     font-weight: 400;
-    margin-bottom:0 ;
+    margin-bottom: 0;
 }
 
+//Responsive
+
+@media (max-width:768px) {
+
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 12px;
+    }
+
+    p {
+        font-size: 10px;
+
+    }
+}

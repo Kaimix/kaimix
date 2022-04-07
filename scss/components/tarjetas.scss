@@ -1,39 +1,73 @@
 //FlexBox
-#tarjetas{
+#tarjetas {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    text-align: center;
 }
 
 
 //Estilo de texto
-#tarjetas{.tarjeta{h4{
-                                color: $verde;
-                                margin: .75rem;
-                                font-family:$fuenteTitulo;
-                                font-weight: 400;
-                                font-size: 1.25rem;
-                            }}}
-#tarjetas{.tarjeta{p{margin: .75rem;
-    font-size: .85rem;
-    font-weight: 600;
-    line-height: 1.06rem;
-}}}
+#tarjetas {
+    .tarjeta {
+        box-shadow: 0 0 2rem $grisOscuro;
+
+        h4 {
+            color: $verde;
+            margin: .75rem;
+            font-family: $fuenteTitulo;
+            font-weight: 400;
+            font-size: 1.25rem;
+        }
+    }
+}
+
+#tarjetas {
+    .tarjeta {
+        p {
+            margin: .75rem;
+            font-size: .85rem;
+            font-weight: 600;
+            line-height: 1.06rem;
+            text-shadow: none;
+        }
+    }
+}
 
 //Estilo de tarjetas
 
-.tarjeta{
+.tarjeta {
     width: 15.2rem;
     height: 16.4rem;
     border-radius: 1rem;
     border-bottom: $verde 1.2rem solid;
     background-color: $grisOscuro;
+    transition: .5s;
 }
 
-.icono-tarjeta{
+.icono-tarjeta {
     background-color: $verdeOscuro;
     border-radius: 3rem;
     padding: .2rem;
     margin: .75rem;
     size: 4rem;
+}
+
+//hover
+
+#tarjetas {
+    .tarjeta:hover {
+        background-color: $verde;
+        border-bottom: $grisOscuro 1.2rem solid;
+        transform: scale(1.3);
+        cursor: pointer;
+
+        .titulo_tarjeta {
+            color: $negro;
+        }
+
+        p {
+            color: $negro;
+        }
+    }
 }

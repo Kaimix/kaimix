@@ -1,0 +1,65 @@
+#confianza>p,
+#confianza h2 {
+    text-align: center;
+}
+
+#confianza-1,
+#confianza-2 {
+    display: grid;
+    grid-template-columns: 18rem 18rem 18rem;
+    gap: 1rem 8rem;
+}
+
+#confianza-2 {
+    grid-template-rows: 15rem 15rem;
+}
+
+.tarjeta-t {
+    width: 18rem;
+    height: 15rem;
+    margin: 0;
+    text-align: center;
+
+    h2 {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.tarjeta-t {
+    p {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+}
+
+.tarjeta-t {
+    img {
+        width: 2rem;
+    }
+}
+
+.gente {
+    position: relative;
+    left: 38%;
+}
+
+//Responsive
+
+@media(max-width:500px) {
+
+    #confianza {
+        justify-items: center;
+
+        #confianza-1,
+        #confianza-2 {
+            display: block;
+            margin-left: 0;
+        }
+    }
+
+    .gente {}
+
+
+}

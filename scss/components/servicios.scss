@@ -1,22 +1,32 @@
-#servicios{#titulo-servicios{h3{color: $blanco;}}}
+#servicios {
+    #titulo-servicios {
 
-.descripcion{margin: 3.4rem;
-width: 28rem;}
+        h3 {
+            color: $blanco;
+        }
+    }
+}
 
-#subtitulos{ 
-    margin-left: 0;
-    .subtitulo{
-                     font-family: $fuenteTexto;
-                     font-weight: 600;
-                     color: $verde;
-                     margin-left: 0;
-                   }
-    
+.descripcion {
+    margin: 3.4rem;
+    width: auto;
+}
+
+#subtitulos {
+    margin: 0;
+
+    .subtitulo {
+        font-family: $fuenteTexto;
+        font-weight: 600;
+        color: $verde;
+        margin-left: 0;
+    }
+
 }
 
 //Contenedor Grid
 
-.servicios{
+.servicios {
     display: flex;
     flex: 35% 35%;
     gap: 30%;
@@ -25,9 +35,63 @@ width: 28rem;}
 
 //Grid de iconos
 
-.grid-iconos{
+.grid-iconos {
     display: grid;
-    grid-template-columns: 4rem 4rem 4rem;
-    grid-template-rows: 4rem 4rem;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 30% 30%;
     gap: 2rem;
+}
+
+.grid-iconos img {
+    transition: .6s linear;
+    width: 4rem;
+}
+
+.grid-iconos img:hover {
+    transform: rotateZ(360deg) scale(1.3);
+
+    cursor: pointer;
+
+}
+
+//Responsive
+
+//responsive
+@media (max-width: 768px) {
+    #servicios {
+        padding: 0;
+        margin: 0;
+
+        p {
+            margin: 10%;
+        }
+
+        .servicios {
+            #subtitulos {
+                display: inline-block;
+                flex-wrap: wrap;
+                margin: 0;
+                gap: 10%;
+            }
+
+            display: block;
+        }
+    }
+}
+
+.grid-iconos {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .grid-iconos {
+        margin: 0;
+    }
+}
+
+@media(min-width:500px) {
+    .grid-iconos {
+        display: grid;
+        margin: 10% 15%;
+    }
 }

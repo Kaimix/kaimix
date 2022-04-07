@@ -1,10 +1,16 @@
-body{
-    background-color: black;
-    div, section{
-    margin: 3.4rem;
-}
+* {
+    box-sizing: border-box;
 }
 
-hr{
-    border-color: $verdeOscuro;
+body {
+    background-color: black;
+
+    main {
+        align-items: center;
+
+        div,
+        section {
+            margin: 3rem;
+        }
+    }
 }

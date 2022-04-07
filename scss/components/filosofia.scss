@@ -1,17 +1,34 @@
-#filosofia{
+#filosofia {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    .descripcion{
+    flex-wrap: wrap;
+
+    .descripcion {
         width: 24rem;
-        p{
-            width: 24rem;
-            height: 15rem;
+
+        p {
+            width: 100%;
+            height: 100%;
         }
     }
 }
 
-#filosofia{div{ img{
-            width: 22rem;   
-            height: 20rem;
-        }}}
+#filosofia {
+    div {
+        img {
+            width: 80%;
+
+        }
+    }
+}
+
+//responsive
+@media (max-width: 375px) {
+    #filosofia {
+
+        padding: 0;
+        margin: 0;
+
+    }
+
+}
