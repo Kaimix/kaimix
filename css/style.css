@@ -206,6 +206,14 @@
   width: 2rem;
 }
 
+#gente {
+  grid-column: 2;
+}
+
+#somos {
+  margin: 12%;
+}
+
 @media (max-width: 500px) {
   #confianza {
     justify-items: center;
