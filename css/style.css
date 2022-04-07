@@ -158,6 +158,9 @@
   transform: scale(1.3);
   cursor: pointer;
 }
+#tarjetas .tarjeta:hover .icono-tarjeta {
+  background-color: #000000;
+}
 #tarjetas .tarjeta:hover .titulo_tarjeta {
   color: #000000;
 }
