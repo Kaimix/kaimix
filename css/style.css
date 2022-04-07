@@ -196,11 +196,6 @@
   width: 2rem;
 }
 
-.gente {
-  position: relative;
-  left: 38%;
-}
-
 @media (max-width: 500px) {
   #confianza {
     justify-items: center;
